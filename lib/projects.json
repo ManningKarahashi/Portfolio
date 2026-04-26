@@ -1,0 +1,74 @@
+[
+  {
+    "title": "IMDB Sentiment Analysis",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a sentiment classifier using an LSTM neural network with tokenization and padded batching, optimized with cross-entropy loss."
+  },
+  {
+    "title": "Flower Image Classifier",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Trained a CNN for multi-class flower classification using PyTorch with GPU acceleration, batch normalization, dropout, and data augmentation."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2022",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2021",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  }
+]
