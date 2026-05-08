@@ -317,3 +317,101 @@ html {
 .selected:is(path) {
   fill: var(--color);
 }
+
+dl.stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.25em 1em;
+    margin: 1em 0;
+    padding: 1em 1.25em;
+    border: 1px solid oklch(90% 2% 250);
+    border-radius: 0.75em;
+}
+
+dl.stats dt {
+    font-size: 0.85em;
+    color: oklch(45% 3% 250);
+}
+
+dl.stats dd {
+    font-weight: 600;
+    margin: 0;
+}
+
+.tooltip {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background: color-mix(in oklch, canvas 85%, transparent);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 16px oklch(0% 0 0 / 0.15);
+    border-radius: 0.5em;
+    padding: 0.75em 1em;
+    pointer-events: none;
+    z-index: 100;
+}
+
+dl.info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.2em 1em;
+    margin: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, visibility;
+}
+
+dl.info dt {
+    font-size: 0.8em;
+    color: oklch(45% 3% 250);
+}
+
+dl.info dd {
+    margin: 0;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 20em;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+circle {
+    transition: 200ms;
+    transform-origin: center;
+    transform-box: fill-box;
+    cursor: pointer;
+}
+
+circle:hover {
+    transform: scale(1.5);
+}
+
+circle.selected {
+    fill: #ff6b6b !important;
+    fill-opacity: 1 !important;
+}
+
+.gridlines line {
+    stroke: oklch(70% 0 0 / 0.3);
+    stroke-width: 1px;
+}
+
+.gridlines path {
+    display: none;
+}
+
+@keyframes marching-ants {
+    to { stroke-dashoffset: -8; }
+}
+
+.selection {
+    fill-opacity: 0.1;
+    stroke: black;
+    stroke-opacity: 0.7;
+    stroke-dasharray: 5 3;
+    animation: marching-ants 2s linear infinite;
+}
