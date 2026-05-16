@@ -14,8 +14,9 @@
   {
   "title": "Bikewatching",
   "year": "2025",
+  "image": "https://dsc106.com/labs/lab02/images/empty.svg",
   "description": "An interactive map visualization of BlueBike traffic in the Boston area. Explore bike lanes, station activity, and traffic flow patterns filtered by time of day.",
-  "url": "https://ManningKarahashi.github.io/bikewatching/"
+  "url": "https://manningkarahashi.github.io/Bikewatching/"
   },
   {
     "title": "Lorem ipsum dolor sit.",

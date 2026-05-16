@@ -102,36 +102,27 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         console.error('renderProjects: containerElement is null or undefined');
         return;
     }
- 
+
     containerElement.innerHTML = '';
- 
+
     if (!projects || projects.length === 0) {
         containerElement.innerHTML = '<p>No projects to display.</p>';
         return;
     }
- 
+
     for (const project of projects) {
         const article = document.createElement('article');
- 
+
         article.innerHTML = `
             <${headingLevel}>${project.title ?? 'Untitled'}</${headingLevel}>
             <img src="${project.image ?? ''}" alt="${project.title ?? ''}">
             <div>
                 <p>${project.description ?? ''}</p>
                 <p class="project-year">${project.year ?? ''}</p>
+                ${project.url ? `<a href="${project.url}" target="_blank">View Project →</a>` : ''}
             </div>
         `;
- 
+
         containerElement.appendChild(article);
     }
 }
-
-article.innerHTML = `
-  <${headingLevel}>${project.title ?? 'Untitled'}</${headingLevel}>
-  <img src="${project.image ?? ''}" alt="${project.title ?? ''}">
-  <div>
-    <p>${project.description ?? ''}</p>
-    <p class="project-year">${project.year ?? ''}</p>
-    ${project.url ? `<a href="${project.url}" target="_blank">View Project →</a>` : ''}
-  </div>
-`;
