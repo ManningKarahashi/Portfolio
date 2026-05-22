@@ -379,22 +379,6 @@ dl.info[hidden]:not(:hover, :focus-within) {
     visibility: hidden;
 }
 
-circle {
-    transition: 200ms;
-    transform-origin: center;
-    transform-box: fill-box;
-    cursor: pointer;
-}
-
-circle:hover {
-    transform: scale(1.5);
-}
-
-circle.selected {
-    fill: #ff6b6b !important;
-    fill-opacity: 1 !important;
-}
-
 .gridlines line {
     stroke: oklch(70% 0 0 / 0.3);
     stroke-width: 1px;
@@ -414,4 +398,105 @@ circle.selected {
     stroke-opacity: 0.7;
     stroke-dasharray: 5 3;
     animation: marching-ants 2s linear infinite;
+}
+
+circle {
+    transition: r 200ms, cx 200ms, cy 200ms, fill-opacity 200ms;
+    transform-origin: center;
+    transform-box: fill-box;
+    cursor: pointer;
+}
+
+@starting-style {
+    circle {
+        r: 0;
+    }
+}
+
+circle:hover {
+    transform: scale(1.5);
+}
+
+circle.selected {
+    fill: #ff6b6b !important;
+    fill-opacity: 1 !important;
+}
+
+#scrolly-1 {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+#scrolly-1 > * {
+    flex: 1;
+}
+
+#scatter-story {
+    position: relative;
+}
+
+.step {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-left: 3px solid oklch(70% 20% 220);
+    background: color-mix(in oklch, canvas 95%, oklch(70% 20% 220));
+    border-radius: 0 0.5em 0.5em 0;
+    line-height: 1.6;
+    padding-bottom: 2em;
+    min-height: 10vh;
+}
+
+#scatter-plot {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    height: 50vh;
+    overflow: visible;
+}
+
+#files {
+    display: grid;
+    grid-template-columns: 12em 1fr;
+    gap: 0.25em 0;
+    margin-top: 1em;
+}
+
+#files > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+    align-items: start;
+    margin-bottom: 0.5em;
+}
+
+#files dt {
+    grid-column: 1;
+    padding-top: 0.6em;
+}
+
+#files dt code {
+    font-size: 0.85em;
+    word-break: break-all;
+}
+
+#files dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+}
+
+.loc {
+    display: block;
+    width: 0.5em;
+    aspect-ratio: 1;
+    background: var(--color, steelblue);
+    border-radius: 50%;
+    transition: background 200ms;
 }
